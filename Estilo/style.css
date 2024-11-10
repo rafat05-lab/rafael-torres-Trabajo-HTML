@@ -49,6 +49,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.nav-into a.active {
+    color: #fff;
+    background-color: #c98982;
+    border-radius: 5px;
+  }
+  
 .nav-into a:hover {
     background-color: #c98982;
     border-radius: 5px;
