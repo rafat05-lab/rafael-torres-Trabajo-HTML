@@ -170,6 +170,11 @@ body {
         font-size: 2em;
     }
 
+    .nav-into {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .welcome-text {
         font-size: 1em;
         padding: 10px;
