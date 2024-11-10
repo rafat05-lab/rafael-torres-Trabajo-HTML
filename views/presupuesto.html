@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Hilos de Kurumi</title>
+
+    <!-- Vinculando hoja de estilos externa -->
+    <link rel="stylesheet" href="../Estilo/style-presupuesto.css">
+
+    <!-- Fuente personalizada desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Imagenes/crochet.png">
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Hilos de Kurumi</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="nav-index">
+        <ul>
+            <li class="nav-into">
+                <a href="index.html">Inicio</a>
+                <a href="producto.html">Galería</a>
+                <a href="presupuesto.html">Presupuesto</a>
+                <a href="contacto.html">Contacto</a>      
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal del formulario -->
+    <div class="container-form">
+        <form action="get">
+
+            <!-- Título del formulario -->
+            <h2>Solicita un presupuesto</h2>
+
+            <!-- Grupo de campos del formulario -->
+            <div class="form-group">
+
+                <!-- Campo de nombre -->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[A-Z a-z]{4,15}" required>
+
+                <!-- Campo de correo -->
+                <label for="mail">Correo</label>
+                <input type="email" name="mail" id="mail" placeholder="Correo" pattern="[A-Za-z0-9_-.]+@[a-z0-9._-]+/.[a-z]{2-4}" required>
+
+                <!-- Campo de teléfono -->
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="tel" id="tel" placeholder="Teléfono" pattern="[0-9]{9}">
+
+                <!-- Campo de mensaje -->
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
+                <label><input type="checkbox" name="terminos" id="teminos" required>Acepto terminos y condiciones de envio</label>
+
+                <!-- Botón de envío -->
+                <input class="btn-form" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    
+        <!-- Pie de página con redes sociales -->
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <nav class="social-links">
+            <a href="#"><img src="../Imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../Imagenes/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="../Imagenes/instagram.png" alt="Instagram"></a>
+        </nav>
+        <p>&copy; 2023 Hilos de Kurumi - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

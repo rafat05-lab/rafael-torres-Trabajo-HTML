@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f2;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Meow Script', cursive;
+}
+
+header h1 {
+    color: #5a2a27;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.nav-index {
+    background-color: #e8a6a1;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-index ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-into {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-into a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-into a:hover {
+    background-color: #c98982;
+    border-radius: 5px;
+}
+
+/* Estilos de la cuadrícula de productos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Información del producto */
+.product-info {
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 1.3em;
+    color: #5a2a27;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.product-quality, .product-price {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Precio */
+.product-price {
+    font-weight: bold;
+    color: #e8a6a1;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 15px;
+    color: #5a2a27;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Enlaces de redes sociales */
+.social-links a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Efecto hover en iconos de redes sociales */
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+    .nav-into {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

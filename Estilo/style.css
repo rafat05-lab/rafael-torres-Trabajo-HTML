@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f2;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Meow Script', cursive;
+}
+
+.header h1 {
+    color: #5a2a27;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Barra de navegación */
+
+.nav-index {
+    background-color: #e8a6a1;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-index ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-into {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-into a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-into a:hover {
+    background-color: #c98982;
+    border-radius: 5px;
+}
+
+/* Sección de bienvenida centrada */
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(243, 197, 184, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #5a2a27;
+    font-size: 1.2em;
+    max-width: 80%;
+}
+
+/* Sección Sobre Nosotres */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fde7e3;
+}
+
+.about-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.about-text h2 {
+    color: #5a2a27;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #333;
+}
+
+.about-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+/* Botón de llamada a la acción */
+
+.container-button{
+    margin-top: 20px;
+}
+
+.cta-button {
+    font-weight: bold;
+    background-color: #e8a6a1;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #c98982;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 15px;
+    color: #5a2a27;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Enlaces de redes sociales */
+.social-links a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Efecto hover en iconos de redes sociales */
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Adaptabilidad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .welcome-text {
+        font-size: 1em;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+}

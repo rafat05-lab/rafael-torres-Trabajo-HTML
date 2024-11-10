@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf7f2;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Meow Script', cursive;
+}
+
+header h1 {
+    color: #5a2a27;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.nav-index {
+    background-color: #e8a6a1;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-index ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-into {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-into a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-into a:hover {
+    background-color: #c98982;
+    border-radius: 5px;
+}
+
+/* Contenedor del formulario */
+.container-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.container-form h2 {
+    color: #5a2a27;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    font-size: 1em;
+    color: #5a2a27;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+    border-color: #f3c5b8;
+}
+
+/* Campo de mensaje */
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botón de envío */
+.btn-form {
+    background-color: #e8a6a1;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: #c98982;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #f3c5b8;
+    text-align: center;
+    padding: 15px;
+    color: #5a2a27;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Enlaces de redes sociales */
+.social-links a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Efecto hover en iconos de redes sociales */
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+    .nav-into {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-form {
+        padding: 15px;
+    }
+}
